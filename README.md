@@ -1,4 +1,4 @@
-# 📚 DocFlow Studio — Professional A4 Academic Notes & Assessment PDF Creator
+# 📚 Academic PDF Creator — Professional A4 Notes & Assessment PDF Studio
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/License-MIT-amber.svg?style=for-the-badge" alt="License" />
 </p>
 
-> **DocFlow Studio** is a modern, high-craft WYSIWYG document composer and vector A4 PDF creator engineered specifically for teachers, tutors, and academic institutions (designed for **RK Institute**). Build publishing-grade study notes, CBSE test papers, and formula reference sheets with institutional branding, LaTeX equations, and 1-click answer masking.
+> **Academic PDF Creator** is a modern, high-craft WYSIWYG document composer and vector A4 PDF creator engineered specifically for teachers, tutors, and academic institutions (designed for **RK Institute**). Build publishing-grade study notes, CBSE test papers, and formula reference sheets with institutional branding, LaTeX equations, and 1-click answer masking.
 
 ---
 
@@ -65,10 +65,10 @@ Structured into 6 specialized academic categories:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/docflow-studio.git
+git clone https://github.com/Prabhu0077/academic-pdf-creator.git
 
 # Navigate into project directory
-cd docflow-studio
+cd academic-pdf-creator
 
 # Install dependencies
 npm install
@@ -93,7 +93,7 @@ npm run preview
 ## 📂 Project Architecture
 
 ```
-docflow-notes/
+academic-pdf-creator/
 ├── public/
 │   └── rk-assets/               # Institutional seals, stamps, and logos
 ├── src/
@@ -146,7 +146,7 @@ docflow-notes/
 ## 🖨️ PDF Export & Printing Recommendations
 
 To produce crisp, borderless A4 study notes:
-1. In DocFlow Studio, click **Print PDF** (or press `Ctrl+P`).
+1. In **Academic PDF Creator**, click **Print PDF** (or press `Ctrl+P`).
 2. In your browser's Print dialog:
    * **Destination**: *Save as PDF*
    * **Paper Size**: *A4*

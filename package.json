@@ -1,5 +1,6 @@
 {
-  "name": "docflow-notes",
+  "name": "academic-pdf-creator",
+  "description": "Professional A4 Academic Notes & Assessment PDF Creator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
