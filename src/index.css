@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px -2px rgba(59, 130, 246, 0.2), 0 0 4px -1px rgba(99, 102, 241, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 15px 1px rgba(59, 130, 246, 0.4), 0 0 8px 1px rgba(99, 102, 241, 0.3);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pop-in {
+  animation: popIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Smooth Accordion Height Animation using CSS Grid */
+.accordion-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 250ms cubic-bezier(0.16, 1, 0.3, 1), opacity 200ms ease;
+}
+
+.accordion-grid.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.accordion-content {
+  overflow: hidden;
+}
+
+/* Pulsating glow animation for highlighted blocks in sidebar */
+@keyframes pulsateHighlight {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.3);
+    border-color: rgba(147, 197, 253, 0.9);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 15px 2px rgba(59, 130, 246, 0.4), 0 0 20px 4px rgba(99, 102, 241, 0.2);
+    border-color: rgba(59, 130, 246, 1);
+    transform: scale(1.03);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    border-color: rgba(147, 197, 253, 0.9);
+    transform: scale(1);
+  }
+}
+
+.pulsate-highlight {
+  animation: pulsateHighlight 1.4s infinite ease-in-out !important;
+  border-color: #3b82f6 !important;
+  z-index: 25 !important;
+  position: relative !important;
+}
+
+/* Canvas newly inserted block highlight */
+@keyframes canvasBlockPulse {
+  0% {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4), 0 0 15px 2px rgba(59, 130, 246, 0.2);
+    background-color: rgba(59, 130, 246, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.6), 0 0 20px 4px rgba(99, 102, 241, 0.25);
+    background-color: rgba(59, 130, 246, 0.08);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    background-color: transparent;
+  }
+}
+
+.canvas-block-inserted-highlight {
+  animation: canvasBlockPulse 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  border-radius: 0.5rem;
+}
+
+
+
+
+/* Custom Studio scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* ============================================================
+   A4 Print & High-Fidelity Vector PDF Engine Rules
+   ============================================================ */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 14mm 10mm;
+  }
+
+  html, body, #root {
+    height: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Suppress all interactive UI chrome during print */
+  .no-print,
+  aside,
+  nav,
+  button,
+  input[type="file"] {
+    display: none !important;
+  }
+
+  /* Full-bleed canvas layout */
+  .canvas-wrapper {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    display: block !important;
+  }
+
+  .print-page-sheet {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  #print-canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+
+  /* Prevent awkward page breaks cutting boxes in half */
+  .break-inside-avoid,
+  .defbox,
+  .caution,
+  .life,
+  .casebox,
+  .exam-tip,
+  .formula-box,
+  .worked-box,
+  .activity-box,
+  .summary-box,
+  .instructions-box,
+  .card-grid-3,
+  .comparison-vs,
+  .timeline-steps,
+  .data-table-block,
+  .qcard,
+  .companion-grid,
+  .image-figure,
+  .hallmark-closing-block,
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Prevent orphan headings at bottom of page */
+  h1, h2, h3, h4, .heading-block, .hero-banner {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Page break block */
+  .page-break-indicator {
+    break-before: page !important;
+    page-break-before: always !important;
+    display: block !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+}
