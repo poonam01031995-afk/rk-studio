@@ -62,6 +62,18 @@ export const RK_STAMPS_AND_ASSETS: StampItem[] = [
     iconName: 'Award',
   },
   {
+    id: 'stamp-rk-studio-bca',
+    name: 'RK-STUDIO Academic Engineering Hallmark',
+    category: 'official-seal',
+    badgeText: 'RK-STUDIO • ACADEMIC PUBLISHING SYSTEM',
+    subtitle: 'Developed under RK Institute of Academics by BCA Students Team',
+    hindiText: 'गुणवत्तापूर्ण शिक्षा एवं तकनीकी नवाचार का संगम',
+    accentColor: '#1e40af',
+    borderColor: '#60a5fa',
+    bgGradient: 'from-blue-50 via-indigo-50 to-sky-50',
+    iconName: 'Award',
+  },
+  {
     id: 'stamp-teacher-sign',
     name: "Teacher's Evaluation & Signature Box",
     category: 'evaluation',

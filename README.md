@@ -1,6 +1,8 @@
-# 📚 Academic PDF Creator — Professional A4 Notes & Assessment PDF Studio
+# 🎓 RK-STUDIO — Professional A4 Academic Notes & Assessment PDF Creator
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Developed%20Under-RK%20Institute%20of%20Academics-0f3457?style=for-the-badge" alt="RK Institute of Academics" />
+  <img src="https://img.shields.io/badge/Engineered%20By-BCA%20Students%20Team-2563eb?style=for-the-badge" alt="BCA Students Team" />
   <img src="https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
   <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
@@ -9,7 +11,9 @@
   <img src="https://img.shields.io/badge/License-MIT-amber.svg?style=for-the-badge" alt="License" />
 </p>
 
-> **Academic PDF Creator** is a modern, high-craft WYSIWYG document composer and vector A4 PDF creator engineered specifically for teachers, tutors, and academic institutions (designed for **RK Institute**). Build publishing-grade study notes, CBSE test papers, and formula reference sheets with institutional branding, LaTeX equations, and 1-click answer masking.
+> **RK-STUDIO** is a modern, high-craft WYSIWYG document composer and vector A4 PDF creator engineered specifically for educators, tutors, and schools. Build publishing-grade study notes, CBSE test papers, and formula reference sheets with institutional branding, LaTeX equations, and 1-click answer masking.
+>
+> 🏛️ **Institutional Provenance**: Developed under **RK Institute of Academics** by the **BCA Students Team**.
 
 ---
 
@@ -65,10 +69,10 @@ Structured into 6 specialized academic categories:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Prabhu0077/academic-pdf-creator.git
+git clone https://github.com/Prabhu0077/rk-studio.git
 
 # Navigate into project directory
-cd academic-pdf-creator
+cd rk-studio
 
 # Install dependencies
 npm install
@@ -93,7 +97,7 @@ npm run preview
 ## 📂 Project Architecture
 
 ```
-academic-pdf-creator/
+rk-studio/
 ├── public/
 │   └── rk-assets/               # Institutional seals, stamps, and logos
 ├── src/
@@ -146,12 +150,22 @@ academic-pdf-creator/
 ## 🖨️ PDF Export & Printing Recommendations
 
 To produce crisp, borderless A4 study notes:
-1. In **Academic PDF Creator**, click **Print PDF** (or press `Ctrl+P`).
+1. In **RK-STUDIO**, click **Print PDF** (or press `Ctrl+P`).
 2. In your browser's Print dialog:
    * **Destination**: *Save as PDF*
    * **Paper Size**: *A4*
    * **Margins**: *None* (or *Custom: 0*)
    * **Options**: Check **Background graphics** ✅
+
+---
+
+## 🏛️ Provenance & Team Credits
+
+**RK-STUDIO** was developed under the aegis and guidance of **RK Institute of Academics** by the **BCA Students Team**.
+
+* **Institution**: RK Institute of Academics
+* **Engineering Team**: BCA Students Team
+* **Mission**: High-craft digital publishing tools for educators, CBSE Secondary & Senior Secondary notes (Classes 9–12), and competitive academic assessments.
 
 ---
 
@@ -162,5 +176,6 @@ Distributed under the **MIT License**. Free for personal, educational, and insti
 ---
 
 <p align="center">
-  Crafted with precision for <b>RK Institute of Learning</b> • Designed for excellence in academic publishing.
+  Crafted with pride under <b>RK Institute of Academics</b> by the <b>BCA Students Team</b>.<br/>
+  Designed for excellence in academic publishing.
 </p>

@@ -106,16 +106,19 @@ export const Navbar: React.FC<Props> = ({
       {/* ── ZONE 1: BRAND & FILE MANAGEMENT MENU ── */}
       <div className="flex items-center gap-2">
         {/* Brand Crest */}
-        <div className="flex items-center gap-2 pr-1">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#0f3457] via-[#1a5c9c] to-[#2563eb] flex items-center justify-center shadow-xs border border-blue-400/30">
+        <div className="flex items-center gap-2 pr-1 select-none" title="RK-STUDIO — Developed under RK Institute of Academics by BCA Students Team">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#0f3457] via-[#1a5c9c] to-[#2563eb] flex items-center justify-center shadow-xs border border-blue-400/30 shrink-0">
             <span className="font-heading font-black text-amber-300 text-[11px]">RK</span>
           </div>
           <div className="hidden sm:block">
-            <div className="text-[11px] font-extrabold tracking-tight font-heading text-slate-800 flex items-center gap-1.5 leading-none">
-              <span>RK STUDIO</span>
-              <span className="text-[8.5px] font-bold text-amber-700 bg-amber-50 px-1 py-0.2 rounded border border-amber-200">
-                PDF
+            <div className="text-[12px] font-black tracking-tight font-heading text-slate-900 flex items-center gap-1.5 leading-none">
+              <span className="bg-gradient-to-r from-[#0f3457] to-[#1d4ed8] bg-clip-text text-transparent">RK-STUDIO</span>
+              <span className="text-[8px] font-extrabold tracking-wider text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">
+                PRO
               </span>
+            </div>
+            <div className="text-[8px] font-semibold text-slate-500 leading-tight truncate max-w-[210px] mt-0.5">
+              RK Institute of Academics • BCA Team
             </div>
           </div>
         </div>
@@ -272,6 +275,17 @@ export const Navbar: React.FC<Props> = ({
                   </div>
                 </button>
               )}
+
+              {/* Attribution & Provenance */}
+              <div className="px-2.5 py-2 mt-1 border-t border-stone-100 bg-stone-50/70 rounded-b-lg">
+                <div className="text-[10px] font-black text-slate-800 flex items-center gap-1">
+                  <span className="text-blue-600">🎓</span>
+                  <span>RK-STUDIO PRO</span>
+                </div>
+                <div className="text-[9px] text-slate-500 leading-tight mt-0.5">
+                  Developed under <strong className="text-slate-700">RK Institute of Academics</strong> by <strong className="text-slate-700">BCA Students Team</strong>
+                </div>
+              </div>
             </div>
           )}
         </div>

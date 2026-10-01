@@ -1,8 +1,9 @@
 {
-  "name": "academic-pdf-creator",
-  "description": "Professional A4 Academic Notes & Assessment PDF Creator",
+  "name": "rk-studio",
+  "version": "1.0.0",
+  "description": "RK-STUDIO — Professional A4 Academic Notes & Assessment PDF Creator. Developed under RK Institute of Academics by BCA Students Team.",
+  "author": "BCA Students Team (RK Institute of Academics)",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
