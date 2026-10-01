@@ -69,7 +69,7 @@ Structured into 6 specialized academic categories:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Prabhu0077/rk-studio.git
+git clone https://github.com/poonam01031995-afk/rk-studio.git
 
 # Navigate into project directory
 cd rk-studio
